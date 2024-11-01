@@ -1,0 +1,27 @@
+.log{
+    width: 350px;
+    height: 450px;
+    @extend %flex-center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // background-color: $text-color;
+    background-color: $text-color;
+    border-radius: 12px;
+    margin-top: 100px;
+}
+.input{
+    width: 270px;
+    height: 160px;
+    @extend %flex-between;
+}
+.text{
+    @include font-style($secondText-color,16px,none);
+}
+.title{
+    @include font-style($text-color,52px,700);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(rgba(246, 207, 102), rgba(248, 193, 111), rgba(253, 162, 131));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}

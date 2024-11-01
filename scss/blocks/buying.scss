@@ -1,0 +1,68 @@
+.section-buying {
+    background: linear-gradient(#F6CF66, #F8C16F, #FDA283);
+    width: 100%;
+    min-height: 100vh;
+    @extend %flex-center;
+}
+.section-buying__container {
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+    @extend %flex-column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $text-color;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.section-buying__block{
+    // width: 380px;
+    width: 400px;
+    height: 240px;
+    @extend %flex-column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $text-color;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.section-buying__container-title{
+    text-align: center;
+    @include font-style($text-color,32px,700);
+    background: linear-gradient(rgba(246, 207, 102), rgba(248, 193, 111), rgba(253, 162, 131));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.close {
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    @include font-style($black-color,18px,600);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heart {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    margin-top: 10px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background: red;
+    border-radius: 25px 25px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}

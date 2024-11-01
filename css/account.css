@@ -1,0 +1,11 @@
+.block-account {
+  width: 350px;
+  height: 450px;
+  border-radius: 12px;
+  border: 1px solid red;
+  margin: 100px auto 0;
+}
+
+.account-input {
+  border-bottom: 2px solid gray;
+}/*# sourceMappingURL=account.css.map */

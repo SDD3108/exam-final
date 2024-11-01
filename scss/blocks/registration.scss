@@ -1,0 +1,90 @@
+.main{
+    background: linear-gradient(#F6CF66, #F8C16F, #FDA283);
+    width: 100%;
+    min-height: 100vh;
+    @extend %flex-center;
+    flex-direction: column;
+}
+// input{
+//     // width: 270px;
+//     // border-bottom: 2px solid gray;
+// }
+.reg{
+    width: 350px;
+    height: 450px;
+    border-radius: 12px;
+    margin: 100px auto 0;
+    @extend %flex-center;
+    flex-direction: column;
+    background-color: $text-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inputs{
+    width: 270px;
+    height: 300px;
+    @extend %flex-between;
+}
+.inputs input{
+    width: 270px;
+    border-bottom: 2px solid gray;
+}
+.reg-btn{
+    width: 200px;
+    height: 42px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 24px;
+    color: $text-color;
+    font-size: 16px;
+    // background: $gradientTwo;
+    background: linear-gradient(#F1AF73,#F1AF73,#F1AF73);
+}
+.account-button{
+    width: 350px;
+    height: 42px;
+    border-radius: 12px;
+    margin: 27px auto 0;
+    @extend %flex-center;
+    text-align: center;
+    color: $text-color;
+    background: rgba(255, 255, 255, 0.4);
+}
+.account-button a{
+    color: $text-color;
+}
+.seePassword{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    // @extend %flex-column-between;
+}
+.seePassword p {
+    @include font-style($secondText-color,16px,600)
+}
+.reg__notification-container{
+    position: fixed;
+    top: 20px;
+    right: 40.5%;
+    width: 300px;
+    z-index: 1000;
+    @media (max-width:$tablet-size){
+        right: 30%;
+    }
+    @media (max-width:$mobile-size){
+        right: 25%;
+    }
+}
+.reg__notification{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.reg__notification.show{
+    opacity: 1;
+}

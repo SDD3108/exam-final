@@ -1,0 +1,14 @@
+@import './reset.scss';
+@import './vars.scss';
+@import './mixins-extends.scss';
+@import '../blocks/registration.scss';
+@import '../blocks/login.scss';
+@import '../blocks/main.scss';
+@import '../blocks/basket.scss';
+@import '../blocks/buying.scss';
+@import '../blocks/test.scss';
+@import '../blocks/account.scss';
+
+body{
+    font-family: $main-font;
+}
